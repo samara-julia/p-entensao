@@ -14,10 +14,12 @@ html {
 body {
     margin: 0;
     font-family: "inter", sans-serif;
-    background-color: #fff;
+    background-color: #F2F3FF;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -63,7 +65,8 @@ header {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 12px;
-    font-size: 0.9em;;
+    font-size: 0.9em;
+    ;
 }
 
 /* icons header */
@@ -138,8 +141,9 @@ header {
     align-items: center;
 }
 
-.hero, .bg {
-        border-radius: 0px 0px 25px 25px;
+.hero,
+.bg {
+    border-radius: 0px 0px 25px 25px;
 }
 
 .bg {
@@ -191,13 +195,12 @@ button:hover {
 .categorias h2 {
     color: #3143ad;
     font-size: 3em;
-    font-family: 'playfair display', serif;
 }
 
 .categorias-itens {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
@@ -234,7 +237,6 @@ button:hover {
 }
 
 .destaques h2 {
-    font-family: 'playfair display', serif;
     font-size: 3em;
     margin-bottom: 50px;
 }
@@ -492,4 +494,327 @@ footer {
         width: 300px;
         height: auto;
     }
+
+    .grupo-itens {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .loja-item {
+        width: 45%;
+    }
+
+    .form-voluntario {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-voluntario input,
+  .form-voluntario select {
+    width: 100%;
+  }
+
+  .form-voluntario button {
+    width: 70%;
+  }
+
+  .form-voluntario h2 {
+    font-size: 2em;
+  }
+
+  .form-voluntario p,
+  .form-voluntario label {
+    font-size: 1em;
+  }
 }
+
+/* loja  */
+
+.loja {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: #3143ad;
+}
+
+.loja h1 {
+    font-size: 2.4em;
+    padding: 20px;
+}
+
+.loja-item img {
+    border: 1px solid white;
+    width: 188px;
+    height: 188px;
+    object-fit: scale-down;
+    padding: 0;
+    gap: 50px;
+}
+
+.loja a {
+    text-decoration: none;
+}
+
+.loja-itens {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+}
+
+
+.loja-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.loja-categorias h3 {
+    font-size: 0.9em;
+    color: #fff;
+    display: block;
+    margin: 0;
+    border-radius: 12px;
+    font-size: 1.5em;
+    padding: 10px 14px 10px 18px;
+}
+
+.grupo-itens {
+    display: flex;
+}
+
+.loja-item {
+    padding: 12px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.desc,
+.preco {
+    margin: 6px;
+    color: #3143ad !important;
+}
+
+.cart {
+    background: #3143ad;
+    color: white;
+    padding: 10px;
+    margin: 4px auto;
+}
+
+#fem {
+    background-color: #B91B5A;
+}
+
+#masc {
+    background-color: #729abb;
+}
+
+#inf {
+    background-color: #D8B45C;
+}
+
+#calc {
+    background-color: #7984ff;
+}
+
+
+/* loja doacao  */
+
+.doar {
+    margin: 0px auto;
+    border-radius: 100px 0px 100px 0px;
+    width: 100%;
+    background-color: #7984ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.doar h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3.8em;
+}
+
+.doar p {
+    color: white;
+}
+
+.doar button {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* pagina voluntariado  */
+
+.form-voluntario {
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #D3D9FF;
+    color: #3143ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.form-voluntario h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+.form-voluntario p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 40px;
+    color: #3143ad;
+}
+
+.form-voluntario label {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input:focus {
+   outline: none;
+}
+
+.form-voluntario input {
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 10px;
+    width: 100%;
+    height: 28px;
+    margin-bottom: 23px;
+}
+
+.form-voluntario select {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.form-voluntario #mensagem {
+    padding: 12px;
+}
+
+.form-voluntario button {
+    width: 30%;
+    margin: 25px auto;
+}
+
+#selecione {
+    color: #2c3e50;
+}
+
+
+/* página doaçao de roupas  */
+
+
+.form-doacao {
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1d793;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.form-doacao h2 {
+    text-align: center;
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+.form-doacao p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 40px;
+    color: #3143ad;
+}
+
+.form-doacao label {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input:focus {
+   outline: none;
+}
+
+.form-doacao input {
+    border: 1px solid black;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 10px;
+    width: 100%;
+    height: 28px;
+    margin-bottom: 23px;
+}
+
+.form-doacao select {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+#descricao {
+    font-family: 'inter';
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+.form-doacao button {
+    width: 30%;
+    margin: 25px auto;
+}
+
+#selecione {
+    color: #2c3e50;
+}
+
+
+/* pagina de apoio e escuta  */
+
+

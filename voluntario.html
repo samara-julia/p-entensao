@@ -1,62 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Voluntariado - ONG</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
-        h1 { color: #2c3e50; }
-        .voluntariado-section { background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px #eee; max-width: 700px; margin: auto; }
-        .tipo-voluntariado { margin-bottom: 18px; }
-        .tipo-voluntariado h2 { color: #2980b9; margin-bottom: 6px; }
-        .btn-inscrever { background: #27ae60; color: #fff; padding: 10px 22px; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; }
-        .btn-inscrever:hover { background: #219150; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="voluntariado-section">
-        <h1>Seja um Voluntário!</h1>
-        <p>Ajude nossa ONG a transformar vidas! Existem diversas formas de voluntariado, escolha a que mais combina com você:</p>
-        
-        <div class="tipo-voluntariado">
-            <h2>Voluntariado em Peças Teatrais</h2>
-            <ul>
-                <li>Atores e atrizes</li>
-                <li>Direção e produção</li>
-                <li>Cenografia e figurino</li>
-                <li>Iluminação e som</li>
-            </ul>
-        </div>
-        
-        <div class="tipo-voluntariado">
-            <h2>Voluntariado em Eventos</h2>
-            <ul>
-                <li>Organização de eventos beneficentes</li>
-                <li>Montagem e desmontagem de estruturas</li>
-                <li>Recepção e apoio ao público</li>
-            </ul>
-        </div>
-        
-        <div class="tipo-voluntariado">
-            <h2>Voluntariado Administrativo</h2>
-            <ul>
-                <li>Apoio em redes sociais e comunicação</li>
-                <li>Gestão de projetos</li>
-                <li>Captação de recursos</li>
-            </ul>
-        </div>
-        
-        <div class="tipo-voluntariado">
-            <h2>Voluntariado Educacional</h2>
-            <ul>
-                <li>Oficinas e cursos para a comunidade</li>
-                <li>Reforço escolar</li>
-                <li>Mentoria e orientação profissional</li>
-            </ul>
-        </div>
-        
-        <p>Interessado? Clique no botão abaixo e inscreva-se para fazer parte do nosso time de voluntários!</p>
-        <button class="btn-inscrever" onclick="window.location.href='mailto:contato@ongexemplo.org?subject=Quero ser voluntário(a)!'">Inscrever-se</button>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <h2>Organização Believe</h2>
+                </div>
+                <div class="menuzinho">
+                    <div class="menu-icon" id="menu-icon" onclick="toggleMenu(this)">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <nav class="menu" id="menu">
+                        <a href="">Início</a>
+                        <a href="">Sobre nós</a>
+                        <a href="">Seja voluntário</a>
+                        <a href="">Carrinho de Compras</a>
+                        <div class="log">
+                            <a href="">Login</a>
+                            <a href="" id="cadastro">Cadastro</a>
+                        </div>
+
+                    </nav>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="voluntario.html">Seja um voluntário</a></li>
+                        <li><a href="doe.html">Doe</a></li>
+                        <li><a href="apoio.html">Apoio e Escuta</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
+                    <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
+                    <a href="#" class="icon"><img src="assets/user.svg" alt="Usuário"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form class="form-voluntario">
+                <h2>Seja um voluntário</h2>
+                <p>Toda ajuda é bem-vinda e faz parte de um propósito maior: transformar realidades com empatia e
+                    solidariedade </p>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="area-voluntariado" id="selecione">Em qual área você gostaria de atuar como voluntário(a)?</label>
+                <small style="display: block; margin-bottom: 8px; color: #838383;">
+                    Você pode escolher a área em que mais se identifica para contribuir com a organização
+                </small>
+                <select id="area-voluntariado" name="area-voluntariado" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="organizacao">Organização e triagem de doações</option>
+                    <option value="fotografia">Fotografia dos itens e eventos</option>
+                    <option value="eventos">Apoio em eventos e feiras</option>
+                    <option value="comunicacao">Comunicação e redes sociais</option>
+                    <option value="atendimento">Atendimento ao público</option>
+                    <option value="oficinas">Apoio em oficinas e palestras</option>
+                    <option value="logistica">Logística e transporte</option>
+                    <option value="administracao">Administração e registros</option>
+                    <option value="apoio-escolar">Apoio escolar / atividades com crianças</option>
+                    <option value="limpeza">Manutenção e limpeza do espaço</option>
+                    <option value="limpeza">Nenhuma das anteriores (Explique)</option>
+                </select>
+                <label for="mensagem">Conte um pouquinho sobre você:</label>
+                <textarea id="mensagem" name="mensagem" cols="40" rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </main>
+        <footer>
+            <div class="footer-container">
+
+                <div class="social-icon">
+                    <a href="#"><img src="assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
+                </div>
+                <div class="contato">
+                    <p>Contato: 11 1234-5678</p>
+                    <p>Email: ongbelieve@gmail.com </p>
+                </div>
+                <div class="endereco">
+                    <p>Endereço: Rua Ceará, 86, Francisco Morato, SP</p>
+                </div>
+                <p>© 2025 Believe. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
