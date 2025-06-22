@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -22,21 +21,22 @@
                         <div></div>
                         <div></div>
                     </div>
+
+                    <!-- pode ter uum icone de pesquisa na versao mobile !!!! -->
+
                     <nav class="menu" id="menu">
-                        <a href="">Início</a>
+                        <a href="">Perfil</a>
+                        <a href="">Carrinho de Compras</a>
                         <a href="">Sobre nós</a>
                         <a href="">Seja voluntário</a>
-                        <a href="">Carrinho de Compras</a>
-                        <div class="log">
-                            <a href="">Login</a>
-                            <a href="" id="cadastro">Cadastro</a>
-                        </div>
-
+                        <a href="">Doe</a>
+                        <a href="">Apoio e Escuta</a>
+                        <a href="">Sair</a>
                     </nav>
                 </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="">Início</a></li>
+                        <li><a href="#">Início</a></li>
                         <li><a href="sobre.html">Sobre Nós</a></li>
                         <li><a href="voluntario.html">Seja um voluntário</a></li>
                         <li><a href="doe.html">Doe</a></li>
@@ -45,10 +45,13 @@
                 </nav>
                 <div class="header-icons">
                     <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
-                    <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
-                    <a href="#" class="icon"><img src="assets/user.svg" alt="Usuário"></a>
+                    <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
+                            alt="Carrinho de compras"></a>
+                    <a href="#" id="meu-perfil" class="icon icon-perfil">
+                        <img src="assets/user.svg" alt="Usuário">
+                    </a>
+
                 </div>
-            </div>
         </header>
 
         <main>
@@ -164,7 +167,7 @@
                 <a href="voluntario.html" target="_blank"><button>Quero ser voluntário</button></a>
                 <a href="voluntario.html" target="_blank"><button>Quero fazer uma doacao</button></a>
             </section>
-            
+
     </div>
     </main>
     <footer>
@@ -184,6 +187,19 @@
         </div>
     </footer>
     </div>
+    <!-- painel lateral do perfil -->
+    <aside id="painel-perfil" class="painel-perfil">
+        <div class="botaofechar">
+            <span id="fecharPerfil" class="fechar-btn">×</span>
+        </div>
+        <div class="painel-conteudo">
+            <ul>
+                <li><a href="perfil.html">Meu perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+    </aside>
+    <script src="script.js"></script>
 </body>
 
 </html>

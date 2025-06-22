@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -35,51 +36,48 @@
                 </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="index.html">Início</a></li>
+                        <li><a href="">Início</a></li>
                         <li><a href="sobre.html">Sobre Nós</a></li>
                         <li><a href="voluntario.html">Seja um voluntário</a></li>
-                        <li><a href="apoio.html">Doe</a></li>
+                        <li><a href="doe.html">Doe</a></li>
                         <li><a href="apoio.html">Apoio e Escuta</a></li>
                     </ul>
                 </nav>
                 <div class="header-icons">
                     <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
                     <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
-                    <a href="#" id="meu-perfil" class="icon icon-perfil">
-                        <img src="assets/user.svg" alt="Usuário">
-                    </a>
+                    <a href="#" class="icon"><img src="assets/user.svg" alt="Usuário"></a>
                 </div>
             </div>
         </header>
+
         <main>
-            <form class="form-doacao">
-                <h2>Doação de Itens</h2>
-                <p>Preencha o formulário abaixo para doar seus itens ao nosso brechó sustentável.</p>
+            <main class="perfil-usuario">
+                <h2>Olá, Samara!</h2>
 
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" required>
+                <section class="info-usuario">
+                    <h3>Seus Dados</h3>
+                    <p><strong>Nome:</strong> Samara Júlia</p>
+                    <p><strong>Email:</strong> samara@email.com</p>
+                    <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                </section>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
+                <section class="interacoes">
+                    <h3>Suas Ações</h3>
+                    <ul>
+                        <li>2 peças doadas</li>
+                        <li>1 compra realizada</li>
+                        <li>Cadastro como voluntária</li>
+                    </ul>
+                </section>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <section class="acoes-usuario">
+                    <h3>Gerenciar</h3>
+                    <button>Editar Perfil</button>
+                    <button>Sair</button>
+                </section>
+            </main>
 
-                <label for="tipo-item">Tipo de item</label>
-                <select id="tipo-item" name="tipo-item" required>
-                    <option value="" disabled selected>Selecione o tipo de item</option>
-                    <option value="roupas">Roupas</option>
-                    <option value="calçados">Calçados</option>
-                    <option value="acessórios">Acessórios</option>
-                    <option value="outros">Outros</option>
-                </select>
-
-                <label for="descricao">Descrição do item</label>
-                <textarea id="descricao" name="descricao" cols="40" rows="5"
-                    placeholder="Conte um pouco sobre o estado e detalhes do item" required></textarea>
-
-                <button type="submit">Enviar Doação</button>
-            </form>
         </main>
         <footer>
             <div class="footer-container">
@@ -98,19 +96,6 @@
             </div>
         </footer>
     </div>
-    <!-- painel lateral do perfil -->
-    <aside id="painel-perfil" class="painel-perfil">
-        <div class="botaofechar">
-            <span id="fecharPerfil" class="fechar-btn">×</span>
-        </div>
-        <div class="painel-conteudo">
-            <ul>
-                <li><a href="perfil.html">Meu perfil</a></li>
-                <li><a href="#">Sair</a></li>
-            </ul>
-        </div>
-    </aside>
-    <script src="script.js"></script>
 </body>
 
 </html>

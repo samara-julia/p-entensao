@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -46,7 +45,9 @@
                 <div class="header-icons">
                     <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
                     <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
-                    <a href="#" class="icon"><img src="assets/user.svg" alt="Usuário"></a>
+                    <a href="#" id="meu-perfil" class="icon icon-perfil">
+                        <img src="assets/user.svg" alt="Usuário">
+                    </a>
                 </div>
             </div>
         </header>
@@ -80,11 +81,10 @@
                             <option value="outros">Outros</option>
                         </select>
 
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua mensagem"
-                            required></textarea>
+                <label for="mensagem">Conte um pouquinho sobre você:</label>
+                <textarea id="mensagem" name="mensagem" cols="40" rows="5"></textarea>
 
-                        <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
                     </form>
                 </section>
         </main>
@@ -105,6 +105,19 @@
             </div>
         </footer>
     </div>
+        <!-- painel lateral do perfil -->
+    <aside id="painel-perfil" class="painel-perfil">
+        <div class="botaofechar">
+            <span id="fecharPerfil" class="fechar-btn">×</span>
+        </div>
+        <div class="painel-conteudo">
+            <ul>
+                <li><a href="perfil.html">Meu perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+    </aside>
+    <script src="script.js"></script>
 </body>
 
 </html>

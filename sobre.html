@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -37,15 +36,17 @@
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html" target="_blank">Sobre Nós</a></li>
-                        <li><a href="voluntario.html" target="_blank">Seja um voluntário</a></li>
-                        <li><a href="apoio.html" target="_blank">Apoio e Escuta</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="voluntario.html">Seja um voluntário</a></li>
+                        <li><a href="apoio.html">Apoio e Escuta</a></li>
                     </ul>
                 </nav>
                 <div class="header-icons">
                     <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
                     <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
-                    <a href="#" class="icon"><img src="assets/user.svg" alt="Usuário"></a>
+                    <a href="#" id="meu-perfil" class="icon icon-perfil">
+                        <img src="assets/user.svg" alt="Usuário">
+                    </a>
                 </div>
             </div>
         </header>
@@ -96,6 +97,19 @@
             </div>
         </footer>
     </div>
+    <!-- painel lateral do perfil -->
+    <aside id="painel-perfil" class="painel-perfil">
+        <div class="botaofechar">
+            <span id="fecharPerfil" class="fechar-btn">×</span>
+        </div>
+        <div class="painel-conteudo">
+            <ul>
+                <li><a href="perfil.html">Meu perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+    </aside>
+    <script src="script.js"></script>
 </body>
 
 </html>
