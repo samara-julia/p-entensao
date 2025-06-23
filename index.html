@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Página Inicial - ONG Believe</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="contato-endereco" style="background-color: black; color: white;">
+            <span><strong>Telefone:</strong> 11 1234-5678</span>
+            <span><strong>Endereço:</strong> Rua Ceará, 86, Francisco Morato, SP</span>
+        </div>
         <header>
             <div class="header-container">
                 <div class="logo">
@@ -21,9 +25,6 @@
                         <div></div>
                         <div></div>
                     </div>
-
-                    <!-- pode ter uum icone de pesquisa na versao mobile !!!! -->
-
                     <nav class="menu" id="menu">
                         <a href="">Perfil</a>
                         <a href="">Carrinho de Compras</a>
@@ -34,27 +35,29 @@
                         <a href="">Sair</a>
                     </nav>
                 </div>
+                <div class="header-icons">
+                    <div class="search-box" id="search-box">
+                        <input type="text" placeholder="Buscar...">
+                        <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
+                    </div>
+                    <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
+                            alt="Carrinho de compras"></a>
+                    <a href="#" id="meu-perfil" class="icon icon-perfil">
+                        <img src="assets/user.svg" alt="Usuário">
+                    </a>
+                </div>
+        </header>
+        <main>
+            <section class="seçoes" style="background-color: #ffffff;">
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#">Início</a></li>
                         <li><a href="sobre.html">Sobre Nós</a></li>
                         <li><a href="voluntario.html">Seja um voluntário</a></li>
                         <li><a href="doe.html">Doe</a></li>
                         <li><a href="apoio.html">Apoio e Escuta</a></li>
                     </ul>
                 </nav>
-                <div class="header-icons">
-                    <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
-                    <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
-                            alt="Carrinho de compras"></a>
-                    <a href="#" id="meu-perfil" class="icon icon-perfil">
-                        <img src="assets/user.svg" alt="Usuário">
-                    </a>
-
-                </div>
-        </header>
-
-        <main>
+            </section>
             <section class="main-container">
                 <div class="hero">
                     <div class="bg">
@@ -65,86 +68,107 @@
                             </button></a>
                     </div>
             </section>
-            <section class="categorias">
-                <h2>Categorias</h2>
-                <div class="categorias-itens">
-                    <a href="" class="item">
-                        <img style="background-color: pink;" src="assets/camiseta feminina.png" alt="">
-                        <span>Feminino</span>
-                    </a>
-
-                    <a href="" class="item">
-                        <img style="background-color: #6BA66E;" src="assets/calça social masculina (1).png" alt="">
-                        <span>Masculino</span>
-                    </a>
-
-                    <a href="" class="item">
-                        <img style="background-color: #D8B45C;" src="assets/regata infantil (2).png" alt="">
-                        <span>Infantil</span>
-                    </a>
-
-                    <a href="" class="item">
-                        <img style="background-color: #F8F6F1;" src="assets/tenis infantil (masculino).png" alt="">
-                        <span>Calçados</span>
-                    </a>
+            <section class="secao-consciente">
+                <div class="texto-consciente">
+                    <h2>Por que um brechó sustentável?</h2>
+                    <p>O setor da moda é um dos que mais poluem o planeta. Com a moda lenta e circular, é possível dar
+                        uma nova vida às peças já produzidas, evitando desperdícios e promovendo o consumo consciente.
+                    </p>
+                    <p>Ao comprar ou doar aqui, você colabora com a sustentabilidade, ajuda a combater a exploração na
+                        indústria da moda e incentiva uma sociedade mais responsável ♡</p>
+                </div>
+                <div class="img-consciente">
+                    <img src="assets/brecho.jpeg" alt="Foto do brechó da ONG">
                 </div>
             </section>
+
             <section class="destaques">
                 <h2>Destaques</h2>
                 <div class="destaques-itens">
                     <div class="peca-destaque">
                         <a href="">
-                            <img style="background-color: pink;" src="assets/vestido (1).png" alt="">
-                            <h3>Vestido Feminino</h3>
-                            <span class="preco">R$ 10,00</span>
+                            <div class="pecinha">
+                                <img src="assets/vestido (1).png" alt="">
+                                <h3>Vestido Florido Feminino</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                         </a>
                     </div>
                     <div class="peca-destaque">
                         <a href="">
-                            <img src="assets/sapatinho menina (1).png" alt="">
-                            <h3>Camisa Social</h3>
-                            <span class="preco">R$ 10,00</span>
+                            <div class="pecinha">
+                                <img src="assets/sapatinho menina (1).png" alt="">
+                                <h3>Sapatilha Feminina Infantil</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                         </a>
                     </div>
-                    <div class="destaques-itens">
-                        <div class="peca-destaque">
-                            <a href="">
-                                <img style="background-color: #6BA66E;" src="assets/camiseta masculina (1).png" alt="">
-                                <h3>Camiseta Masculina</h3>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/calça social masculina (1).png" alt="">
+                                <h3>Calça Social Masculina</h3>
                                 <span class="preco">R$ 10,00</span>
-                            </a>
-                        </div>
-                        <div class="peca-destaque">
-                            <a href="">
-                                <img style="background-color: #D8B45C;" src="assets/vestidinho menina (1).png" alt="">
-                                <h3>Vestido Infantil Feminino</h3>
-                                <span class="preco">R$ 10,00</span>
-                            </a>
-                        </div>
-                        <div class="peca-destaque">
-                            <a href="">
-                                <img style="background-color: pink;" src="assets/calça feminina.png" alt="">
-                                <h3>Vestido Infantil Feminino</h3>
-                                <span class="preco">R$ 10,00</span>
-                            </a>
-                        </div>
-                        <div class="peca-destaque">
-                            <a href="">
-                                <img style="background-color: pink;" src="assets/camiseta feminina.png" alt="">
-                                <h3>Vestido Infantil Feminino</h3>
-                                <span class="preco">R$ 10,00</span>
-                            </a>
-                        </div>
-                        <div class="peca-destaque">
-                            <a href="">
-                                <img style="background-color: #D8B45C;" src="assets/regata infantil (feminina) (1).png"
-                                    alt="">
-                                <h3>Vestido Infantil Feminino</h3>
-                                <span class="preco">R$ 10,00</span>
-                            </a>
-                        </div>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
                     </div>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/camiseta masculina (1).png" alt="">
+                                <h3>Camisa Polo Masculina</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
+                    </div>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/saltinho boneca (2).png" alt="Salto preto estilo boneca">
+                                <h3>Salto Boneca Preto</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
+                    </div>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/bermudinha (1).png" alt="">
+                                <h3>Bermuda Masculina Infantil</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
+                    </div>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/calça infantil feminina (1).png" alt="">
+                                <h3>Calça Infantil Rosa</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
+                    </div>
+                    <div class="peca-destaque">
+                        <a href="">
+                            <div class="pecinha">
+                                <img src="assets/camiseta feminina.png" alt="">
+                                <h3>Camiseta Feminina</h3>
+                                <span class="preco">R$ 10,00</span>
+                            </div>
+                            <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
+                        </a>
+                    </div>
+                </div>
             </section>
+
             <section class="divulgue">
                 <h1>Divulgue o nosso brechó</h1>
                 <p>Nosso brechó ainda possui pouca visibilidade. Por isso, toda forma de apoio na divulgação é
@@ -162,10 +186,14 @@
                 </div>
             </section>
             <section class="voluntario">
-                <h1>Seja um voluntário ou faça uma doacao</h1>
+                <h1>Seja um Voluntário <br>
+                    ou <br>
+                    Faça uma Doação</h1>
                 <p>Doe roupas, itens, dê aulas, faça parte.</p>
-                <a href="voluntario.html" target="_blank"><button>Quero ser voluntário</button></a>
-                <a href="voluntario.html" target="_blank"><button>Quero fazer uma doacao</button></a>
+                <div class="queroser">
+                    <a href="voluntario.html" target="_blank"><button>Quero ser voluntário</button></a>
+                    <a href="doe.html" target="_blank"><button>Quero fazer uma doação</button></a>
+                </div>
             </section>
 
     </div>
@@ -175,13 +203,6 @@
 
             <div class="social-icon">
                 <a href="#"><img src="assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
-            </div>
-            <div class="contato">
-                <p>Contato: 11 1234-5678</p>
-                <p>Email: ongbelieve@gmail.com </p>
-            </div>
-            <div class="endereco">
-                <p>Endereço: Rua Ceará, 86, Francisco Morato, SP</p>
             </div>
             <p>© 2025 Believe. Todos os direitos reservados.</p>
         </div>
@@ -199,6 +220,7 @@
             </ul>
         </div>
     </aside>
+    <div id="popup-container" class="popup-container"></div>
     <script src="script.js"></script>
 </body>
 

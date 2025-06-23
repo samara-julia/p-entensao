@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Loja</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="contato-endereco" style="background-color: black; color: white;">
+            <span><strong>Telefone:</strong> 11 1234-5678</span>
+            <span><strong>Endereço:</strong> Rua Ceará, 86, Francisco Morato, SP</span>
+        </div>
         <header>
             <div class="header-container">
                 <div class="logo">
@@ -22,36 +26,40 @@
                         <div></div>
                     </div>
                     <nav class="menu" id="menu">
-                        <a href="index.html">Início</a>
+                        <a href="">Perfil</a>
+                        <a href="">Carrinho de Compras</a>
                         <a href="">Sobre nós</a>
                         <a href="">Seja voluntário</a>
-                        <a href="">Carrinho de Compras</a>
-                        <div class="log">
-                            <a href="">Login</a>
-                            <a href="" id="cadastro">Cadastro</a>
-                        </div>
-
+                        <a href="">Doe</a>
+                        <a href="">Apoio e Escuta</a>
+                        <a href="">Sair</a>
                     </nav>
                 </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="voluntario.html" target="_blank">Seja um voluntário</a></li>
-                        <li><a href="apoio.html" target="_blank">Apoio e Escuta</a></li>
-                    </ul>
-                </nav>
                 <div class="header-icons">
-                    <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
-                    <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
+                    <div class="search-box" id="search-box">
+                        <input type="text" placeholder="Buscar...">
+                        <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
+                    </div>
+                    <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
+                            alt="Carrinho de compras"></a>
                     <a href="#" id="meu-perfil" class="icon icon-perfil">
                         <img src="assets/user.svg" alt="Usuário">
                     </a>
                 </div>
-            </div>
         </header>
         <!-- colocar descricao de cada roupa  -->
         <main>
+            <section class="seçoes" style="background-color: #ffffff;">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="voluntario.html">Seja um voluntário</a></li>
+                        <li><a href="doe.html">Doe</a></li>
+                        <li><a href="apoio.html">Apoio e Escuta</a></li>
+                    </ul>
+                </nav>
+            </section>
             <section class="loja">
                 <h1>Lorem Ipsum</h1>
                 <div class="loja-itens">
@@ -66,9 +74,7 @@
                                     <span class="desc">Calça infantil feminina</span>
                                     <span class="preco">R$ 00,00</span>
                                 </a>
-                                <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
-                                </a>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                             </div>
                             <div class="loja-item">
                                 <a href="">
@@ -77,17 +83,17 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
                                 <a href="">
-                                    <img src="assets/fe" alt="calça infantil rosa feminina">
+                                    <img src="assets/calça infantil feminina (1).png" alt="calça infantil rosa feminina">
                                     <span class="desc">Calça infantil feminina</span>
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -97,7 +103,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                         </div>
@@ -114,7 +120,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -124,7 +130,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -135,7 +141,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -146,7 +152,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                         </div>
@@ -163,7 +169,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                   <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -173,7 +179,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -184,7 +190,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -194,7 +200,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                         </div>
@@ -211,7 +217,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -221,7 +227,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -231,7 +237,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                             <div class="loja-item">
@@ -241,7 +247,7 @@
                                     <span class="preco">R$ 00,00</span>
                                 </a>
                                 <a href="">
-                                    <button class="cart">Adicionar ao Carrinho</button>
+                                    <button class="cart btn-adicionar">Adicionar ao Carrinho</button>
                                 </a>
                             </div>
                         </div>
@@ -267,13 +273,6 @@
             <div class="social-icon">
                 <a href="#"><img src="assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
             </div>
-            <div class="contato">
-                <p>Contato: 11 1234-5678</p>
-                <p>Email: ongbelieve@gmail.com </p>
-            </div>
-            <div class="endereco">
-                <p>Endereço: Rua Ceará, 86, Francisco Morato, SP</p>
-            </div>
             <p>© 2025 Believe. Todos os direitos reservados.</p>
         </div>
     </footer>
@@ -290,6 +289,8 @@
             </ul>
         </div>
     </aside>
+    <!-- container onde os pop-ups vão aparecer -->
+<div id="popup-container" class="popup-container"></div>
     <script src="script.js"></script>
 </body>
 

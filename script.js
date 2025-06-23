@@ -1,3 +1,19 @@
+document.querySelectorAll('a[href]').forEach(link => {
+    const destino = link.getAttribute('href');
+    
+    // Ignora se for "#" ou vazio (links que só abrem painel, modal etc)
+    if (destino === '#' || destino === '' || destino.startsWith('javascript')) return;
+
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+            window.location.href = destino;
+        }, 300);
+    });
+});
+
+
 function toggleMenu(icon) {
     icon.classList.toggle("active"); // animação do X
 
@@ -18,4 +34,28 @@ btnAbrirPerfil.addEventListener('click', e => {
 
 btnFecharPerfil.addEventListener('click', () => {
   painelPerfil.classList.remove('aberto');
+});
+
+
+// feedback quando adiciona ao carrinho - bem simples so pra mostrar o feedback da heuristicas de visibilidade de status do sistema 
+document.querySelectorAll('.btn-adicionar').forEach(botao => {
+  botao.addEventListener('click', (event) => {
+    event.preventDefault(); // isso impede que o botão recarregue a página
+
+    const popupContainer = document.getElementById('popup-container');
+
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    popup.innerText = 'Item adicionado ao carrinho!';
+
+    popupContainer.appendChild(popup);
+
+    setTimeout(() => {
+      popup.style.opacity = '0';
+    }, 3500);
+
+    setTimeout(() => {
+      popup.remove();
+    }, 4000);
+  });
 });

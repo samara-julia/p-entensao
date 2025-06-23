@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Perfil</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="contato-endereco" style="background-color: black; color: white;">
+            <span><strong>Telefone:</strong> 11 1234-5678</span>
+            <span><strong>Endereço:</strong> Rua Ceará, 86, Francisco Morato, SP</span>
+        </div>
         <header>
             <div class="header-container">
                 <div class="logo">
@@ -34,15 +38,6 @@
 
                     </nav>
                 </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="voluntario.html">Seja um voluntário</a></li>
-                        <li><a href="doe.html">Doe</a></li>
-                        <li><a href="apoio.html">Apoio e Escuta</a></li>
-                    </ul>
-                </nav>
                 <div class="header-icons">
                     <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
                     <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
@@ -50,35 +45,42 @@
                 </div>
             </div>
         </header>
+        <main class="perfil-usuario">
+            <div class="voltar" id="carrinhoback">
+                <a href="peças.html"><span>← Loja</span></a>
+            </div>
+            <h2>Olá, Samara!</h2>
+            <section class="info-usuario">
+                <h3>Seus Dados</h3>
+                <p><strong>Nome:</strong> Samara Júlia</p>
+                <p><strong>Email:</strong> samara@email.com</p>
+                <p><strong>Telefone:</strong> (11) 99999-9999</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
+                <p><strong>Data de cadastro:</strong> 10/06/2025</p>
+            </section>
 
-        <main>
-            <main class="perfil-usuario">
-                <h2>Olá, Samara!</h2>
+            <section class="interacoes">
+                <h3>Suas Ações</h3>
+                <ul>
+                    <li>🧥 2 peças doadas</li>
+                    <li>🛒 1 compra realizada</li>
+                    <li>🤝 Cadastrada como voluntária</li>
+                </ul>
+            </section>
 
-                <section class="info-usuario">
-                    <h3>Seus Dados</h3>
-                    <p><strong>Nome:</strong> Samara Júlia</p>
-                    <p><strong>Email:</strong> samara@email.com</p>
-                    <p><strong>Telefone:</strong> (11) 99999-9999</p>
-                </section>
+            <section class="preferencias">
+                <h3>Preferências</h3>
+                <p><strong>Categoria favorita:</strong> Feminino</p>
+                <p><strong>Tipo de item mais buscado:</strong> Vestidos</p>
+            </section>
 
-                <section class="interacoes">
-                    <h3>Suas Ações</h3>
-                    <ul>
-                        <li>2 peças doadas</li>
-                        <li>1 compra realizada</li>
-                        <li>Cadastro como voluntária</li>
-                    </ul>
-                </section>
-
-                <section class="acoes-usuario">
-                    <h3>Gerenciar</h3>
-                    <button>Editar Perfil</button>
-                    <button>Sair</button>
-                </section>
-            </main>
-
+            <section class="acoes-usuario">
+                <h3>Gerenciar</h3>
+                <button>Editar Perfil</button>
+                <button>Sair</button>
+            </section>
         </main>
+
         <footer>
             <div class="footer-container">
 

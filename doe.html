@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Doação</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="contato-endereco" style="background-color: black; color: white;">
+            <span><strong>Telefone:</strong> 11 1234-5678</span>
+            <span><strong>Endereço:</strong> Rua Ceará, 86, Francisco Morato, SP</span>
+        </div>
         <header>
             <div class="header-container">
                 <div class="logo">
@@ -22,37 +26,32 @@
                         <div></div>
                     </div>
                     <nav class="menu" id="menu">
-                        <a href="">Início</a>
+                        <a href="">Perfil</a>
+                        <a href="">Carrinho de Compras</a>
                         <a href="">Sobre nós</a>
                         <a href="">Seja voluntário</a>
-                        <a href="">Carrinho de Compras</a>
-                        <div class="log">
-                            <a href="">Login</a>
-                            <a href="" id="cadastro">Cadastro</a>
-                        </div>
-
+                        <a href="">Doe</a>
+                        <a href="">Apoio e Escuta</a>
+                        <a href="">Sair</a>
                     </nav>
                 </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="voluntario.html">Seja um voluntário</a></li>
-                        <li><a href="apoio.html">Doe</a></li>
-                        <li><a href="apoio.html">Apoio e Escuta</a></li>
-                    </ul>
-                </nav>
                 <div class="header-icons">
-                    <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
-                    <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
+                    <div class="search-box" id="search-box">
+                        <input type="text" placeholder="Buscar...">
+                        <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
+                    </div>
+                    <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
+                            alt="Carrinho de compras"></a>
                     <a href="#" id="meu-perfil" class="icon icon-perfil">
                         <img src="assets/user.svg" alt="Usuário">
                     </a>
                 </div>
-            </div>
         </header>
         <main>
             <form class="form-doacao">
+                    <div class="voltar" id="doacaoback">
+                        <a href="index.html"><span>← Página Inicial</span></a>
+                    </div>
                 <h2>Doação de Itens</h2>
                 <p>Preencha o formulário abaixo para doar seus itens ao nosso brechó sustentável.</p>
 
@@ -74,12 +73,20 @@
                     <option value="outros">Outros</option>
                 </select>
 
-                <label for="descricao">Descrição do item</label>
-                <textarea id="descricao" name="descricao" cols="40" rows="5"
-                    placeholder="Conte um pouco sobre o estado e detalhes do item" required></textarea>
+                <label for="ajuda-entrega">Precisa de ajuda para levar os itens?</label>
+                <select id="ajuda-entrega" name="ajuda-entrega" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
 
-                <button type="submit">Enviar Doação</button>
+                <label for="mensagem">Descrição do item</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o estado e detalhes do item"
+                    required></textarea>
+
+                <button type="submit">Enviar Solicitação</button>
             </form>
+
         </main>
         <footer>
             <div class="footer-container">

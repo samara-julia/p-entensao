@@ -1,106 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Carrinho de Compras</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <div class="header-container">
-                <div class="logo">
-                    <h2>Organização Believe</h2>
-                </div>
-                <div class="menuzinho">
-                    <div class="menu-icon" id="menu-icon" onclick="toggleMenu(this)">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+        <div class="container">
+            <div class="contato-endereco" style="background-color: black; color: white;">
+                <span><strong>Telefone:</strong> 11 1234-5678</span>
+                <span><strong>Endereço:</strong> Rua Ceará, 86, Francisco Morato, SP</span>
+            </div>
+            <header>
+                <div class="header-container">
+                    <div class="logo">
+                        <h2>Organização Believe</h2>
                     </div>
-                    <nav class="menu" id="menu">
-                        <a href="">Início</a>
-                        <a href="">Sobre nós</a>
-                        <a href="">Seja voluntário</a>
-                        <a href="">Carrinho de Compras</a>
-                        <div class="log">
-                            <a href="">Login</a>
-                            <a href="" id="cadastro">Cadastro</a>
+                    <div class="menuzinho">
+                        <div class="menu-icon" id="menu-icon" onclick="toggleMenu(this)">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <nav class="menu" id="menu">
+                            <a href="">Perfil</a>
+                            <a href="">Carrinho de Compras</a>
+                            <a href="">Sobre nós</a>
+                            <a href="">Seja voluntário</a>
+                            <a href="">Doe</a>
+                            <a href="">Apoio e Escuta</a>
+                            <a href="">Sair</a>
+                        </nav>
+                    </div>
+                    <div class="header-icons">
+                        <div class="search-box" id="search-box">
+                            <input type="text" placeholder="Buscar...">
+                            <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
+                        </div>
+                        <a href="carrinho.html" class="icon"><img src="assets/shoppingcart.svg"
+                                alt="Carrinho de compras"></a>
+                        <a href="#" id="meu-perfil" class="icon icon-perfil">
+                            <img src="assets/user.svg" alt="Usuário">
+                        </a>
+                    </div>
+            </header>
+
+            <main>
+                <main class="carrinho">
+                    <div class="voltar" id="carrinhoback">
+                        <a href="index.html"><span>← Voltar para a Loja</span></a>
+                    </div>
+                    <h2>Carrinho</h2>
+                    <div class="item-carrinho">
+                        <img src="assets/vestido (1).png" alt="Vestido Floral">
+                        <div class="info-item">
+                            <!-- fazer pagina do vestido -->
+                            <a href="">
+                                <h3>Vestido Feminino Floral Verde</h3>
+                            </a>
+                            <small>Usado</small><br>
+                            <small>Tamanho: M</small><br>
+                            <small>Categoria: Feminino</small><br>
+                            <small>Quantidade: 1</small>
+                            <p>R$ 20,00</p>
+                            <button>Remover</button>
+                        </div>
+                    </div>
+                    <div class="item-carrinho">
+                        <img src="assets/camiseta feminina.png" alt="Camiseta Feminina listrada branca e vermelha">
+                        <div class="info-item">
+                            <!-- fazer pagina do vestido -->
+                            <a href="">
+                                <h3>Camiseta Feminina Listrada</h3>
+                            </a>
+                            <small>Usado</small><br>
+                            <small>Tamanho: M</small><br>
+                            <small>Categoria: Feminino</small><br>
+                            <small>Quantidade: 1</small>
+                            <p>R$ 20,00</p>
+                            <button>Remover</button>
+                        </div>
+                    </div>
+
+                    <div class="total">
+                        <h3>Resumo da Compra</h3>
+
+                        <div class="linha-total">
+                            <span>Subtotal:</span>
+                            <span>R$ 35,00</span>
                         </div>
 
-                    </nav>
-                </div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="voluntario.html">Seja um voluntário</a></li>
-                        <li><a href="doe.html">Doe</a></li>
-                        <li><a href="apoio.html">Apoio e Escuta</a></li>
-                    </ul>
-                </nav>
-                <div class="header-icons">
-                    <a href="#" class="icon"><img src="assets/search.svg" alt="Buscar"></a>
-                    <a href="#" class="icon"><img src="assets/shoppingcart.svg" alt="Carrinho"></a>
-                                        <a href="#" id="meu-perfil" class="icon icon-perfil">
-                        <img src="assets/user.svg" alt="Usuário">
-                    </a>
-                </div>
-            </div>
-        </header>
+                        <div class="linha-total">
+                            <span>Frete:</span>
+                            <span>A calcular</span>
+                        </div>
 
-        <main>
-            <main class="carrinho">
-                <h2>Seu Carrinho</h2>
-                <div class="item-carrinho">
-                    <img src="assets/vestido (1).png" alt="Vestido Floral">
-                    <div class="info-item">
-                        <h3>Vestido Floral Longo</h3>
-                        <p>R$ 35,00</p>
-                        <button>Remover</button>
+                        <div class="linha-total total-final">
+                            <strong>Total:</strong>
+                            <strong>R$ 35,00</strong>
+                        </div>
+
+                        <a href="peças.html">
+                            <button class="continuar">← Continuar comprando</button>
+                        </a>
+                        <button id="finalizar" class="btn finalizar">Finalizar compra</button>
                     </div>
-                </div>
 
-                <div class="total">
-                    <p>Total: <strong>R$ 35,00</strong></p>
-                    <button>Finalizar compra</button>
-                </div>
+                </main>
+
             </main>
+            <footer>
+                <div class="footer-container">
 
-        </main>
-        <footer>
-            <div class="footer-container">
-
-                <div class="social-icon">
-                    <a href="#"><img src="assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
+                    <div class="social-icon">
+                        <a href="#"><img src="assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a>
+                    </div>
+                    <p>© 2025 Believe. Todos os direitos reservados.</p>
                 </div>
-                <div class="contato">
-                    <p>Contato: 11 1234-5678</p>
-                    <p>Email: ongbelieve@gmail.com </p>
-                </div>
-                <div class="endereco">
-                    <p>Endereço: Rua Ceará, 86, Francisco Morato, SP</p>
-                </div>
-                <p>© 2025 Believe. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
         <!-- painel lateral do perfil -->
-    <aside id="painel-perfil" class="painel-perfil">
-        <div class="botaofechar">
-            <span id="fecharPerfil" class="fechar-btn">×</span>
-        </div>
-        <div class="painel-conteudo">
-            <ul>
-                <li><a href="perfil.html">Meu perfil</a></li>
-                <li><a href="#">Sair</a></li>
-            </ul>
-        </div>
-    </aside>
-    <script src="script.js"></script>
+        <aside id="painel-perfil" class="painel-perfil">
+            <div class="botaofechar">
+                <span id="fecharPerfil" class="fechar-btn">×</span>
+            </div>
+            <div class="painel-conteudo">
+                <ul>
+                    <li><a href="perfil.html">Meu perfil</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </div>
+        </aside>
+        <script src="script.js"></script>
 </body>
 
 </html>
