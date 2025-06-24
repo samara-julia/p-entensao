@@ -22,6 +22,16 @@ body {
     background-color: #F2F3FF;
 }
 
+.back {
+    width: 35px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.back:hover {
+    transform: scale(1.2);
+}
+
 /* popup  */
 
 .popup-container {
@@ -73,38 +83,19 @@ h3 {
 
 /* header */
 header {
+    z-index: 10;
     padding: 5px 20px;
     background-color: #7984ff;
 }
 
 .voltar {
-    width: 24%;
-    box-shadow: 2px 2px 2px #8d8d8d;
     border-radius: 4px;
     padding: 12px;
-    transition: transform 0.3 ease;
-}
-
-.voltar:hover {
-    transform: scale(1.1);
 }
 
 .voltar a {
     text-decoration: none;
-    color: #fff;
-}
-
-#voluntarioback {
-    background-color: #7984ff9c;
-}
-
-#carrinhoback {
-    background-color: #7984ff;
-}
-
-#doacaoback {
-    border: none;
-    background-color: #b6a26f;
+    color: #1a1a1a;
 }
 
 .contato-endereco {
@@ -144,6 +135,7 @@ header {
 }
 
 .nav-menu li a {
+    font-weight: 500;
     text-decoration: none;
     color: #202b66;
     padding: 12px;
@@ -194,11 +186,12 @@ header {
 .menu-icon div {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease-in-out;
 }
 
 .menu-icon.active div:nth-child(1) {
-    transform: rotate(45deg) translate(7.1px, 7.3px);
+    transform: rotate(45deg) translate(7.5px, 7.3px);
 }
 
 .menu-icon.active div:nth-child(2) {
@@ -206,25 +199,34 @@ header {
 }
 
 .menu-icon.active div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(4px, -4px);
 }
 
 /* menu ( mobile ) */
 .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
-    background-color: white;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
     position: absolute;
     top: 60px;
     right: 20px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    flex-direction: column;
+    z-index: 100;
 }
 
 .menu.show {
-    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
+
 
 /* hero */
 .hero {
@@ -419,6 +421,10 @@ button:hover {
     font-weight: bold;
 }
 
+.voluntario button:hover {
+    background-color: #80113d;
+}
+
 
 /* footer */
 footer {
@@ -569,9 +575,9 @@ footer {
         flex-direction: column;
         gap: 15px;
         position: absolute;
-        top: 70px;
-        right: 20px;
-        background-color: white;
+        top: 85px;
+        right: 0px;
+        background-color: #7984ff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -579,8 +585,14 @@ footer {
     }
 
     .menu a {
-        color: black;
+        padding: 6px;
+        border-bottom: 1px solid #ffffff48;
+        color: #fff;
         text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: #000000;
     }
 
     .menu-icon {
@@ -590,8 +602,9 @@ footer {
     .header-icons {
         display: none;
     }
+
     .destaques-itens {
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .main-container h1 {
@@ -689,37 +702,12 @@ footer {
     .form-doacao label {
         font-size: 1em;
     }
-
-
-
-    .apoio-escuta {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .apoio-escuta input,
-    .apoio-escuta select {
-        width: 100%;
-    }
-
-    .apoio-escuta button {
-        width: 70%;
-    }
-
-    .apoio-escuta h2 {
-        font-size: 2em;
-    }
-
-    .apoio-escuta p,
-    .apoio-escuta label {
-        font-size: 1em;
-    }
 }
 
 @media (max-width: 480px) {
-  .destaques-itens {
-    grid-template-columns: 1fr;
-  }
+    .destaques-itens {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* loja  */
@@ -734,7 +722,6 @@ footer {
     flex-wrap: wrap;
     padding: 20px;
     margin: 50px auto;
-    color: #3143ad;
 }
 
 .loja h1 {
@@ -766,6 +753,24 @@ footer {
     gap: 20px;
 }
 
+.loja .pecinha {
+    margin: 0 6px;
+}
+
+.loja button {
+    margin-left: 38px;
+    margin-top: 6px;
+}
+
+.loja .preco {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.loja h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+}
 
 .loja-categorias {
     display: flex;
@@ -873,7 +878,8 @@ form {
     resize: vertical;
     box-sizing: border-box;
     font-size: 0.8em;
-    font-family: "inter", sans-serif;;
+    font-family: "inter", sans-serif;
+    ;
     color: #000000;
 }
 
@@ -888,7 +894,7 @@ form {
     margin: 30px auto;
     padding: 25px;
     background: #D3D9FF;
-    color: #3143ad;
+    color: #202b66;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -968,7 +974,7 @@ input:focus {
     width: 100%;
     margin: 30px auto;
     padding: 20px;
-    background: #f1d793;
+    background: #FDF6D8;
     color: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -1039,6 +1045,80 @@ label {
 
 
 /* pagina de apoio e escuta  */
+
+.form-apoio {
+    max-width: 700px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 25px;
+    background: #FADADD;
+    color: #202b66;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 40px 0px 40px 0px;
+    border: 1px solid #685758;
+}
+
+.form-apoio h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 12px;
+}
+
+.form-apoio p {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.form-apoio label {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.form-apoio button {
+    width: 30%;
+    margin: 25px auto;
+    background-color: #685758;
+}
+
+.form-apoio button:hover {
+    background-color: white;
+    color: #685758;
+}
+
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-apoio input {
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 10px;
+    width: 100%;
+    height: 28px;
+    margin-bottom: 23px;
+}
+
+.form-apoio select {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
 
 /* pagina produto  */
 .pagina-produto {
@@ -1218,7 +1298,7 @@ label {
     padding: 30px;
     background-color: #ffffff;
     border: 1px solid #7984ff;
-    color: #1e285f;
+    color: #202b66;
     border-radius: 20px;
 }
 

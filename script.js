@@ -1,7 +1,7 @@
 document.querySelectorAll('a[href]').forEach(link => {
     const destino = link.getAttribute('href');
     
-    // Ignora se for "#" ou vazio (links que só abrem painel, modal etc)
+    // ignora se for "#" ou vazio (links que só abrem painel, modal etc)
     if (destino === '#' || destino === '' || destino.startsWith('javascript')) return;
 
     link.addEventListener('click', e => {
@@ -35,6 +35,7 @@ btnAbrirPerfil.addEventListener('click', e => {
 btnFecharPerfil.addEventListener('click', () => {
   painelPerfil.classList.remove('aberto');
 });
+
 
 
 // feedback quando adiciona ao carrinho - bem simples so pra mostrar o feedback da heuristicas de visibilidade de status do sistema 
