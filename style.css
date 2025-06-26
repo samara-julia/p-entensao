@@ -119,6 +119,11 @@ header {
     font-size: 0.7em;
 }
 
+.eco img{
+    width: 55px;
+    height: 55px;
+}
+
 /* nav menu ( pc ) */
 .nav-menu {
     padding: 2px;
@@ -304,7 +309,7 @@ button:hover {
 
 .texto-consciente h2 {
     font-size: 2em;
-    color: #3143ad;
+    color: #6BA66E;
     margin-bottom: 15px;
 }
 
@@ -348,11 +353,13 @@ button:hover {
 }
 
 .destaques h2 {
-    background-color: #7984ff;
-    border-radius: 4px;
-    font-size: 3em;
-    color: white;
-    margin-bottom: 50px;
+    width: 100%;
+    background: #7984ff;
+    color: #ffffff;
+    font-size: 2.2em;
+    padding: 6px;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .destaques-itens {
@@ -394,7 +401,7 @@ button:hover {
 .voluntario {
     border-radius: 100px 0px 100px 0px;
     width: 100%;
-    background-color: #7984ff;
+    background-color: #6BA66E;
     padding: 40px 20px;
     text-align: center;
 }
@@ -512,7 +519,7 @@ footer {
 
 .sobre-brecho h1 {
     width: 100%;
-    background: #7984ffb9;
+    background: #6BA66E;
     color: #ffffff;
     padding: 6px;
     border-radius: 30px 0 30px 0;
@@ -537,7 +544,6 @@ footer {
 }
 
 .divulgue p {
-    width: 45vh;
     margin: 0 auto;
 }
 
@@ -975,7 +981,7 @@ input:focus {
     width: 100%;
     margin: 30px auto;
     padding: 20px;
-    background: #FDF6D8;
+    background: #A3C9A8;
     color: #1a1a1a;
     display: flex;
     flex-direction: column;
@@ -994,7 +1000,6 @@ input:focus {
     text-align: center;
     font-size: 1em;
     margin-bottom: 40px;
-    color: #3143ad;
 }
 
 .form-doacao label {
@@ -1038,6 +1043,11 @@ label {
     width: 30%;
     margin: 25px auto;
     background-color: rgb(80, 116, 45);
+}
+
+.form-doacao button:hover {
+    color: rgb(80, 116, 45);
+    background-color: #fff;
 }
 
 #selecione {
@@ -1191,7 +1201,7 @@ input:focus {
     color: #202b66;
     font-size: 1.8em;
     text-align: center;
-    margin: 30px;
+    margin: 25px;
 }
 
 .item-carrinho small {
@@ -1221,7 +1231,7 @@ input:focus {
 }
 
 #finalizar {
-    background-color: #b91b5a;
+    background-color: #7984ff;
 }
 
 #finalizar:hover {
@@ -1281,11 +1291,6 @@ input:focus {
 }
 
 .continuar:hover {
-    background-color: #7984ff;
-    color: white;
-}
-
-.btn.finalizar {
     background-color: #7984ff;
     color: white;
 }

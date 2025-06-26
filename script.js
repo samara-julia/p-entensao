@@ -1,18 +1,3 @@
-document.querySelectorAll('a[href]').forEach(link => {
-    const destino = link.getAttribute('href');
-    
-    // ignora se for "#" ou vazio (links que só abrem painel, modal etc)
-    if (destino === '#' || destino === '' || destino.startsWith('javascript')) return;
-
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        document.body.classList.add('fade-out');
-        setTimeout(() => {
-            window.location.href = destino;
-        }, 300);
-    });
-});
-
 
 function toggleMenu(icon) {
     icon.classList.toggle("active"); // animação do X
