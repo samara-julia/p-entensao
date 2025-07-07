@@ -434,25 +434,40 @@ button:hover {
 
 /* footer */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    color: #808080;
-    font-size: 0.7em;
-    padding: 10px;
-    text-align: center;
+  background-color: #f8f8f8;
+  color: #444;
+  font-size: 0.85em;
+  padding: 30px 10px;
+  margin-top: 60px;
 }
 
-.social-icon {
-    padding-top: 16px;
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.social-icon img {
-    width: 30px;
-    height: 30px;
+.social-icons {
+  margin-bottom: 12px;
 }
+
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 
 /* sobre  */
 
